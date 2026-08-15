@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/pages.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membership — Engage Gym</title>
+  </head>
+  <body>
+    <nav class="navbar scrolled" id="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html"><img src="../img/gym-light.png" alt="logo" /></a>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="programs.html">PROGRAMS</a></li>
+          <li><a class="active" href="member.html">MEMBERSHIP</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+        <button
+          class="join-btn"
+          onclick="
+            document
+              .getElementById('signupForm')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          JOIN NOW
+        </button>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="page-hero"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1600&q=80&quot;);
+      "
+    >
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <span class="section-tag light">PRICING</span>
+        <h1>Choose Your Plan</h1>
+        <p>Flexible memberships with no hidden fees. Cancel anytime.</p>
+      </div>
+    </div>
+
+    <section class="page-section">
+      <div class="page-inner">
+        <div class="plans-grid reveal-up">
+          <div class="plan-card">
+            <div class="plan-header">
+              <span class="plan-name">STARTER</span>
+              <div class="plan-price">
+                <span class="currency">$</span>29<span class="period">/mo</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li>✓ Gym Floor Access (6AM–10PM)</li>
+              <li>✓ Locker Room & Showers</li>
+              <li>✓ 2 Group Classes/Week</li>
+              <li>✓ Fitness Assessment</li>
+              <li>✓ App Access & Tracking</li>
+              <li class="inactive">✗ Personal Trainer Sessions</li>
+              <li class="inactive">✗ Nutrition Plan</li>
+              <li class="inactive">✗ Sauna & Spa</li>
+            </ul>
+            <button class="plan-btn" onclick="selectPlan('Starter - $29/mo')">
+              SELECT STARTER
+            </button>
+          </div>
+          <div class="plan-card featured">
+            <div class="plan-badge">MOST POPULAR</div>
+            <div class="plan-header">
+              <span class="plan-name">ELITE</span>
+              <div class="plan-price">
+                <span class="currency">$</span>59<span class="period">/mo</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li>✓ Unlimited Gym Access</li>
+              <li>✓ All Group Classes (Unlimited)</li>
+              <li>✓ 2 Personal Training Sessions/Month</li>
+              <li>✓ Nutrition Consultation</li>
+              <li>✓ Body Composition Scan</li>
+              <li>✓ Locker Room & Showers</li>
+              <li>✓ App Access & Tracking</li>
+              <li class="inactive">✗ Sauna & Spa Access</li>
+            </ul>
+            <button
+              class="plan-btn featured-btn"
+              onclick="selectPlan('Elite - $59/mo')"
+            >
+              JOIN ELITE
+            </button>
+          </div>
+          <div class="plan-card">
+            <div class="plan-header">
+              <span class="plan-name">CHAMPION</span>
+              <div class="plan-price">
+                <span class="currency">$</span>99<span class="period">/mo</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li>✓ Everything in Elite</li>
+              <li>✓ Unlimited PT Sessions</li>
+              <li>✓ Custom Monthly Meal Plan</li>
+              <li>✓ Priority Class Booking</li>
+              <li>✓ Sauna & Spa Access</li>
+              <li>✓ Monthly Progress Review</li>
+              <li>✓ 24/7 Keycard Access</li>
+              <li>✓ Guest Pass (2/month)</li>
+            </ul>
+            <button class="plan-btn" onclick="selectPlan('Champion - $99/mo')">
+              GO CHAMPION
+            </button>
+          </div>
+        </div>
+
+        <div class="perks-strip reveal-up">
+          <div class="perk">
+            <span>✓</span>
+            <p>No contracts. Cancel anytime.</p>
+          </div>
+          <div class="perk">
+            <span>✓</span>
+            <p>Free 3-day trial for new members.</p>
+          </div>
+          <div class="perk">
+            <span>✓</span>
+            <p>Family discount available (ask at desk).</p>
+          </div>
+          <div class="perk">
+            <span>✓</span>
+            <p>Student & military pricing available.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section dark" id="signupForm">
+      <div class="page-inner" style="max-width: 680px">
+        <div class="section-header reveal-up">
+          <span class="section-tag">GET STARTED</span>
+          <h2>Sign Up Today</h2>
+          <p>
+            Fill out the form below and a team member will contact you within 24
+            hours to confirm your membership.
+          </p>
+        </div>
+        <form class="contact-form reveal-up" onsubmit="submitSignup(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" id="signupFirst" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" placeholder="+1 (702) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label>Selected Plan</label>
+            <select id="planSelect">
+              <option value="Starter - $29/mo">Starter — $29/mo</option>
+              <option value="Elite - $59/mo">Elite — $59/mo</option>
+              <option value="Champion - $99/mo">Champion — $99/mo</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Your Primary Goal</label>
+            <select>
+              <option>Lose Weight</option>
+              <option>Build Muscle</option>
+              <option>Improve Fitness</option>
+              <option>Athletic Performance</option>
+              <option>General Health</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Additional Notes (optional)</label>
+            <textarea
+              rows="4"
+              placeholder="Any injuries, questions, or special requirements?"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%">
+            SUBMIT APPLICATION
+          </button>
+          <div class="form-success hidden" id="signupSuccess">
+            🎉 Application received! We'll be in touch within 24 hours to get
+            you started.
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div
+        class="footer-bottom"
+        style="
+          max-width: 100%;
+          padding: 24px 40px;
+          border-top: 1px solid rgba(255, 255, 255, 0.06);
+        "
+      >
+        <p>© 2025 Engage Gym. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy</a><a href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="back-to-top"
+      id="backToTop"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      ↑
+    </div>
+    <script src="../js/main.js"></script>
+    <script>
+      window.selectPlan = function (plan) {
+        document.getElementById("planSelect").value = plan;
+        document
+          .getElementById("signupForm")
+          .scrollIntoView({ behavior: "smooth" });
+      };
+      window.submitSignup = function (e) {
+        e.preventDefault();
+        const btn = e.target.querySelector("button[type=submit]");
+        btn.textContent = "SUBMITTING...";
+        btn.disabled = true;
+        setTimeout(() => {
+          document.getElementById("signupSuccess").classList.remove("hidden");
+          btn.textContent = "SUBMIT APPLICATION";
+          btn.disabled = false;
+          e.target.reset();
+          document
+            .getElementById("signupSuccess")
+            .scrollIntoView({ behavior: "smooth" });
+        }, 1200);
+      };
+    </script>
+  </body>
+</html>

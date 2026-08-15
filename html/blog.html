@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/pages.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog — Engage Gym</title>
+  </head>
+  <body>
+    <nav class="navbar scrolled" id="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html"><img src="../img/gym-light.png" alt="logo" /></a>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="programs.html">PROGRAMS</a></li>
+          <li><a href="member.html">MEMBERSHIP</a></li>
+          <li><a class="active" href="blog.html">BLOG</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+        <button class="join-btn" onclick="window.location.href = 'member.html'">
+          JOIN NOW
+        </button>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="page-hero"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1600&q=80&quot;);
+      "
+    >
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <span class="section-tag light">KNOWLEDGE HUB</span>
+        <h1>Fitness Blog</h1>
+        <p>
+          Expert tips, science-backed advice, and member stories to fuel your
+          journey.
+        </p>
+      </div>
+    </div>
+
+    <section class="page-section">
+      <div class="page-inner">
+        <div class="blog-filters reveal-up">
+          <button class="filter-btn active" onclick="filterBlog('all', this)">
+            ALL
+          </button>
+          <button class="filter-btn" onclick="filterBlog('nutrition', this)">
+            NUTRITION
+          </button>
+          <button class="filter-btn" onclick="filterBlog('training', this)">
+            TRAINING
+          </button>
+          <button class="filter-btn" onclick="filterBlog('recovery', this)">
+            RECOVERY
+          </button>
+          <button class="filter-btn" onclick="filterBlog('mindset', this)">
+            MINDSET
+          </button>
+        </div>
+
+        <div class="blog-grid" id="blogGrid">
+          <div class="blog-card reveal-up" style="--d: 0s" data-cat="nutrition">
+            <div
+              class="blog-img"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80&quot;);
+              "
+            >
+              <span class="blog-tag">NUTRITION</span>
+            </div>
+            <div class="blog-content">
+              <span class="blog-date">May 10, 2025</span>
+              <h3>The 5 Best Pre-Workout Foods for Maximum Performance</h3>
+              <p>
+                What you eat before training determines how hard you can push.
+                Here's exactly what to eat and when for peak performance.
+              </p>
+              <a href="#" class="blog-read">READ MORE →</a>
+            </div>
+          </div>
+          <div
+            class="blog-card reveal-up"
+            style="--d: 0.1s"
+            data-cat="training"
+          >
+            <div
+              class="blog-img"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&q=80&quot;);
+              "
+            >
+              <span class="blog-tag">TRAINING</span>
+            </div>
+            <div class="blog-content">
+              <span class="blog-date">April 28, 2025</span>
+              <h3>Progressive Overload: The #1 Secret to Building Muscle</h3>
+              <p>
+                If your workouts feel the same every week, you're leaving gains
+                on the table. Here's the complete guide to progressive overload.
+              </p>
+              <a href="#" class="blog-read">READ MORE →</a>
+            </div>
+          </div>
+          <div
+            class="blog-card reveal-up"
+            style="--d: 0.2s"
+            data-cat="recovery"
+          >
+            <div
+              class="blog-img"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80&quot;);
+              "
+            >
+              <span class="blog-tag">RECOVERY</span>
+            </div>
+            <div class="blog-content">
+              <span class="blog-date">April 15, 2025</span>
+              <h3>Sleep, Stress & Gains: How Recovery Affects Your Results</h3>
+              <p>
+                Training hard is only half the equation. Discover why recovery
+                is where the real magic happens in your fitness journey.
+              </p>
+              <a href="#" class="blog-read">READ MORE →</a>
+            </div>
+          </div>
+          <div class="blog-card reveal-up" style="--d: 0.3s" data-cat="mindset">
+            <div
+              class="blog-img"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80&quot;);
+              "
+            >
+              <span class="blog-tag">MINDSET</span>
+            </div>
+            <div class="blog-content">
+              <span class="blog-date">April 3, 2025</span>
+              <h3>How to Build an Unbreakable Fitness Mindset</h3>
+              <p>
+                Consistency, not perfection, is the key to long-term results.
+                Here's the psychological framework that top athletes use.
+              </p>
+              <a href="#" class="blog-read">READ MORE →</a>
+            </div>
+          </div>
+          <div
+            class="blog-card reveal-up"
+            style="--d: 0.4s"
+            data-cat="nutrition"
+          >
+            <div
+              class="blog-img"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80&quot;);
+              "
+            >
+              <span class="blog-tag">NUTRITION</span>
+            </div>
+            <div class="blog-content">
+              <span class="blog-date">March 20, 2025</span>
+              <h3>Protein 101: How Much Do You Actually Need?</h3>
+              <p>
+                The science of protein intake is simpler than the fitness
+                industry wants you to believe. Here's what the research actually
+                says.
+              </p>
+              <a href="#" class="blog-read">READ MORE →</a>
+            </div>
+          </div>
+          <div
+            class="blog-card reveal-up"
+            style="--d: 0.5s"
+            data-cat="training"
+          >
+            <div
+              class="blog-img"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?w=600&q=80&quot;);
+              "
+            >
+              <span class="blog-tag">TRAINING</span>
+            </div>
+            <div class="blog-content">
+              <span class="blog-date">March 8, 2025</span>
+              <h3>The Ultimate Beginner's Guide to the Gym</h3>
+              <p>
+                Walking into a gym for the first time can be intimidating. This
+                step-by-step guide will have you training with confidence from
+                day one.
+              </p>
+              <a href="#" class="blog-read">READ MORE →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div
+        class="footer-bottom"
+        style="
+          max-width: 100%;
+          padding: 24px 40px;
+          border-top: 1px solid rgba(255, 255, 255, 0.06);
+        "
+      >
+        <p>© 2025 Engage Gym. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy</a><a href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="back-to-top"
+      id="backToTop"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      ↑
+    </div>
+    <script src="../js/main.js"></script>
+    <script>
+      window.filterBlog = function (cat, btn) {
+        document
+          .querySelectorAll(".filter-btn")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        document.querySelectorAll("#blogGrid .blog-card").forEach((card) => {
+          const match = cat === "all" || card.dataset.cat === cat;
+          card.style.opacity = match ? "1" : "0.2";
+          card.style.pointerEvents = match ? "auto" : "none";
+          card.style.transform = match ? "none" : "scale(0.95)";
+          card.style.transition = "opacity .4s ease, transform .4s ease";
+        });
+      };
+    </script>
+  </body>
+</html>

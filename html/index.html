@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engage Gym</title>
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="../img/gym-light.png" alt="logo" />
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a class="active" href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#programs">PROGRAMS</a></li>
+          <li><a href="#trainers">TRAINERS</a></li>
+          <li><a href="#membership">MEMBERSHIP</a></li>
+          <li><a href="#testimonials">REVIEWS</a></li>
+          <li><a href="#bmi">BMI</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <button class="join-btn" onclick="window.location.href = 'member.html'">
+          JOIN NOW
+        </button>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="section-hero">
+      <div class="hero-video-overlay"></div>
+      <div class="hero-particles" id="particles"></div>
+      <div class="caption">
+        <span class="caption-tag">Las Vegas #1 Fitness Studio</span>
+        <h3>Welcome back</h3>
+        <h1 id="gymTitle"></h1>
+        <p>
+          We're the biggest, best equipped and most<br />advanced fitness studio
+          in the greater Las Vegas area.
+        </p>
+        <div class="caption-btns">
+          <button
+            class="btn-primary"
+            onclick="window.location.href = 'about.html'"
+          >
+            LEARN MORE
+          </button>
+          <button
+            class="btn-outline"
+            onclick="
+              document
+                .getElementById('programs')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            OUR CLASSES
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-target="1200">0</span
+            ><span class="stat-label">Members</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="30">0</span
+            ><span class="stat-label">Expert Trainers</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="50">0</span
+            ><span class="stat-label">Classes/Week</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="15">0</span
+            ><span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        <span>SCROLL DOWN</span>
+      </div>
+    </section>
+
+    <section id="about" class="section-about">
+      <div class="about">
+        <div class="picture reveal-left">
+          <img
+            src="../img/shutterstock_274434071-800x760.jpg"
+            alt="Gym interior"
+          />
+          <div class="picture-badge">
+            <span class="badge-num">30+</span>
+            <span class="badge-text">Years of Excellence</span>
+          </div>
+        </div>
+        <div class="text reveal-right">
+          <span class="section-tag">WHO WE ARE</span>
+          <h2>Built For Champions.<br />Welcoming Everyone.</h2>
+          <p>
+            Our gym is a modern fitness space designed to help you achieve your
+            health and strength goals. We offer a wide range of equipment, from
+            cardio machines to free weights, along with professional trainers
+            who provide personalized guidance.
+          </p>
+          <p>
+            Whether you're a beginner or an experienced athlete, our welcoming
+            environment and motivating atmosphere make it the perfect place to
+            stay active, build strength, and improve your overall fitness.
+          </p>
+          <hr />
+          <ul class="features-list">
+            <li>
+              <span class="icon-circle">1</span> State-of-the-art equipment &
+              facilities.
+            </li>
+            <li>
+              <span class="icon-circle">2</span> Trusted by over 1,200 active
+              members.
+            </li>
+            <li>
+              <span class="icon-circle">3</span> Certified coaches & nutrition
+              experts.
+            </li>
+            <li>
+              <span class="icon-circle">4</span> Flexible schedules, 6AM –
+              midnight daily.
+            </li>
+          </ul>
+          <button
+            class="btn-primary"
+            onclick="window.location.href = 'about.html'"
+            style="margin-top: 32px"
+          >
+            DISCOVER MORE
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="section-programs">
+      <div class="section-header reveal-up">
+        <span class="section-tag">WHAT WE OFFER</span>
+        <h2>Elite Training Programs</h2>
+        <p>
+          Choose from our world-class programs crafted by elite coaches for
+          every fitness level.
+        </p>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card reveal-up" style="--d: 0s">
+          <div
+            class="program-img"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80&quot;);
+            "
+          ></div>
+          <div class="program-info">
+            <span class="program-tag">STRENGTH</span>
+            <h3>Powerlifting</h3>
+            <p>
+              Build raw strength with structured compound lifts and periodized
+              programming.
+            </p>
+            <div class="program-meta">
+              <span>⏱ 60 min</span>
+              <span>🔥 All Levels</span>
+            </div>
+            <a href="programs.html" class="program-link">VIEW PROGRAM →</a>
+          </div>
+        </div>
+        <div class="program-card reveal-up" style="--d: 0.1s">
+          <div
+            class="program-img"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80&quot;);
+            "
+          ></div>
+          <div class="program-info">
+            <span class="program-tag">CARDIO</span>
+            <h3>HIIT & Cardio</h3>
+            <p>
+              Torch calories and boost endurance with high-intensity interval
+              training.
+            </p>
+            <div class="program-meta">
+              <span>⏱ 45 min</span>
+              <span>🔥 Intermediate</span>
+            </div>
+            <a href="programs.html" class="program-link">VIEW PROGRAM →</a>
+          </div>
+        </div>
+        <div class="program-card reveal-up" style="--d: 0.2s">
+          <div
+            class="program-img"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80&quot;);
+            "
+          ></div>
+          <div class="program-info">
+            <span class="program-tag">FLEXIBILITY</span>
+            <h3>Yoga & Mobility</h3>
+            <p>
+              Recover faster, move better, and find your balance through guided
+              yoga sessions.
+            </p>
+            <div class="program-meta">
+              <span>⏱ 50 min</span>
+              <span>🔥 All Levels</span>
+            </div>
+            <a href="programs.html" class="program-link">VIEW PROGRAM →</a>
+          </div>
+        </div>
+        <div class="program-card reveal-up" style="--d: 0.3s">
+          <div
+            class="program-img"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&q=80&quot;);
+            "
+          ></div>
+          <div class="program-info">
+            <span class="program-tag">BOXING</span>
+            <h3>Combat Fitness</h3>
+            <p>
+              Master boxing fundamentals while getting a full-body cardio and
+              strength workout.
+            </p>
+            <div class="program-meta">
+              <span>⏱ 55 min</span>
+              <span>🔥 All Levels</span>
+            </div>
+            <a href="programs.html" class="program-link">VIEW PROGRAM →</a>
+          </div>
+        </div>
+        <div class="program-card reveal-up" style="--d: 0.4s">
+          <div
+            class="program-img"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80&quot;);
+            "
+          ></div>
+          <div class="program-info">
+            <span class="program-tag">BODY</span>
+            <h3>Body Sculpting</h3>
+            <p>
+              Tone, define and reshape your physique with targeted resistance
+              training.
+            </p>
+            <div class="program-meta">
+              <span>⏱ 50 min</span>
+              <span>🔥 Beginner+</span>
+            </div>
+            <a href="programs.html" class="program-link">VIEW PROGRAM →</a>
+          </div>
+        </div>
+        <div class="program-card reveal-up" style="--d: 0.5s">
+          <div
+            class="program-img"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80&quot;);
+            "
+          ></div>
+          <div class="program-info">
+            <span class="program-tag">PERSONAL</span>
+            <h3>1-on-1 Coaching</h3>
+            <p>
+              Get fully personalized training plans built around your specific
+              goals.
+            </p>
+            <div class="program-meta">
+              <span>⏱ 60 min</span>
+              <span>🔥 Any Level</span>
+            </div>
+            <a href="programs.html" class="program-link">VIEW PROGRAM →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="classes" class="section-results">
+      <div class="results-overlay"></div>
+      <div class="results-content reveal-up">
+        <span class="section-tag light">OUR IMPACT</span>
+        <h2 class="results-title">GREAT RESULTS.</h2>
+        <p class="results-text">
+          We have been operating for over 30 years and are trusted by thousands
+          of fitness enthusiasts. Our certified coaches, premium equipment, and
+          motivating community have helped members achieve extraordinary
+          transformations.
+        </p>
+        <div class="results-stats-row">
+          <div class="r-stat">
+            <span>98%</span>
+            <p>Member Satisfaction</p>
+          </div>
+          <div class="r-stat">
+            <span>5K+</span>
+            <p>Transformations</p>
+          </div>
+          <div class="r-stat">
+            <span>50+</span>
+            <p>Weekly Classes</p>
+          </div>
+        </div>
+        <button
+          class="btn-primary"
+          onclick="window.location.href = 'member.html'"
+        >
+          START TODAY
+        </button>
+      </div>
+    </section>
+
+    <section id="trainers" class="section-trainers">
+      <div class="section-header reveal-up">
+        <span class="section-tag">THE TEAM</span>
+        <h2>Meet Our Elite Trainers</h2>
+        <p>
+          World-class coaches dedicated to your transformation, every single
+          rep.
+        </p>
+      </div>
+      <div class="trainers-grid">
+        <div class="trainer-card reveal-up" style="--d: 0s">
+          <div
+            class="trainer-img"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?w=500&q=80&quot;);
+            "
+          ></div>
+          <div class="trainer-info">
+            <h3>Marcus Stone</h3>
+            <span>Strength & Conditioning</span>
+            <div class="trainer-socials">
+              <a href="#">IG</a><a href="#">TW</a><a href="#">FB</a>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card reveal-up" style="--d: 0.15s">
+          <div
+            class="trainer-img"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1594381898411-846e7d193883?w=500&q=80&quot;);
+            "
+          ></div>
+          <div class="trainer-info">
+            <h3>Aisha Torres</h3>
+            <span>HIIT & Yoga</span>
+            <div class="trainer-socials">
+              <a href="#">IG</a><a href="#">TW</a><a href="#">FB</a>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card reveal-up" style="--d: 0.3s">
+          <div
+            class="trainer-img"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=500&q=80&quot;);
+            "
+          ></div>
+          <div class="trainer-info">
+            <h3>Ryan Cole</h3>
+            <span>Combat & Boxing</span>
+            <div class="trainer-socials">
+              <a href="#">IG</a><a href="#">TW</a><a href="#">FB</a>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card reveal-up" style="--d: 0.45s">
+          <div
+            class="trainer-img"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1548690596-f1722c190938?w=500&q=80&quot;);
+            "
+          ></div>
+          <div class="trainer-info">
+            <h3>Sofia Reyes</h3>
+            <span>Nutrition & Wellness</span>
+            <div class="trainer-socials">
+              <a href="#">IG</a><a href="#">TW</a><a href="#">FB</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="membership" class="section-membership">
+      <div class="section-header reveal-up">
+        <span class="section-tag">PRICING</span>
+        <h2>Choose Your Plan</h2>
+        <p>Transparent pricing with no hidden fees. Cancel anytime.</p>
+      </div>
+      <div class="plans-grid">
+        <div class="plan-card reveal-up" style="--d: 0s">
+          <div class="plan-header">
+            <span class="plan-name">STARTER</span>
+            <div class="plan-price">
+              <span class="currency">$</span>29<span class="period">/mo</span>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li>✓ Gym Floor Access</li>
+            <li>✓ Locker Room</li>
+            <li>✓ 2 Group Classes/Week</li>
+            <li>✓ Fitness Assessment</li>
+            <li class="inactive">✗ Personal Trainer</li>
+            <li class="inactive">✗ Nutrition Plan</li>
+          </ul>
+          <button
+            class="plan-btn"
+            onclick="window.location.href = 'member.html'"
+          >
+            GET STARTED
+          </button>
+        </div>
+        <div class="plan-card featured reveal-up" style="--d: 0.15s">
+          <div class="plan-badge">MOST POPULAR</div>
+          <div class="plan-header">
+            <span class="plan-name">ELITE</span>
+            <div class="plan-price">
+              <span class="currency">$</span>59<span class="period">/mo</span>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li>✓ Unlimited Gym Access</li>
+            <li>✓ All Group Classes</li>
+            <li>✓ 2 PT Sessions/Month</li>
+            <li>✓ Nutrition Consultation</li>
+            <li>✓ Body Composition Scan</li>
+            <li class="inactive">✗ Unlimited PT Sessions</li>
+          </ul>
+          <button
+            class="plan-btn featured-btn"
+            onclick="window.location.href = 'member.html'"
+          >
+            JOIN ELITE
+          </button>
+        </div>
+        <div class="plan-card reveal-up" style="--d: 0.3s">
+          <div class="plan-header">
+            <span class="plan-name">CHAMPION</span>
+            <div class="plan-price">
+              <span class="currency">$</span>99<span class="period">/mo</span>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li>✓ Everything in Elite</li>
+            <li>✓ Unlimited PT Sessions</li>
+            <li>✓ Custom Meal Plan</li>
+            <li>✓ Priority Booking</li>
+            <li>✓ Sauna & Spa Access</li>
+            <li>✓ Monthly Progress Review</li>
+          </ul>
+          <button
+            class="plan-btn"
+            onclick="window.location.href = 'member.html'"
+          >
+            GO CHAMPION
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="transformations" class="section-transformations">
+      <div class="section-header reveal-up">
+        <span class="section-tag">REAL RESULTS</span>
+        <h2>Member Transformations</h2>
+        <p>
+          These aren't filters — these are real people who showed up every day.
+        </p>
+      </div>
+      <div class="transformations-grid">
+        <div class="transform-card reveal-up" style="--d: 0s">
+          <div class="transform-imgs">
+            <div
+              class="t-img before"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80&quot;);
+              "
+            >
+              <span>BEFORE</span>
+            </div>
+            <div
+              class="t-img after"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80&quot;);
+              "
+            >
+              <span>AFTER</span>
+            </div>
+          </div>
+          <div class="transform-info">
+            <h4>James K. — Lost 35 lbs in 4 months</h4>
+            <p>
+              "Engage Gym completely changed my life. The trainers pushed me
+              beyond what I thought was possible."
+            </p>
+          </div>
+        </div>
+        <div class="transform-card reveal-up" style="--d: 0.2s">
+          <div class="transform-imgs">
+            <div
+              class="t-img before"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&q=80&quot;);
+              "
+            >
+              <span>BEFORE</span>
+            </div>
+            <div
+              class="t-img after"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=400&q=80&quot;);
+              "
+            >
+              <span>AFTER</span>
+            </div>
+          </div>
+          <div class="transform-info">
+            <h4>Maria L. — Gained 12 lbs of muscle</h4>
+            <p>
+              "I went from never lifting a weight to competing in my first
+              fitness show. Unbelievable journey."
+            </p>
+          </div>
+        </div>
+        <div class="transform-card reveal-up" style="--d: 0.4s">
+          <div class="transform-imgs">
+            <div
+              class="t-img before"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&q=80&quot;);
+              "
+            >
+              <span>BEFORE</span>
+            </div>
+            <div
+              class="t-img after"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&q=80&quot;);
+              "
+            >
+              <span>AFTER</span>
+            </div>
+          </div>
+          <div class="transform-info">
+            <h4>David R. — Dropped from 28% to 14% body fat</h4>
+            <p>
+              "The nutrition plan + training combo is a game changer. I feel 10
+              years younger."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section-testimonials">
+      <div class="section-header reveal-up">
+        <span class="section-tag">TESTIMONIALS</span>
+        <h2>What Our Members Say</h2>
+      </div>
+      <div class="testimonials-wrapper">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Joining Engage Gym was the best decision of my life. Lost 40
+              pounds in 6 months and gained confidence I never had."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/60?img=1" alt="" />
+              <div>
+                <strong>Sarah Mitchell</strong><span>Member for 2 years</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              "The trainers here are on another level. Personalized, motivating,
+              and genuinely invested in your progress."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/60?img=3" alt="" />
+              <div>
+                <strong>Kevin Williams</strong><span>Member for 1 year</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Best gym in Las Vegas. Period. The community here keeps you
+              accountable and the equipment is always top-notch."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/60?img=5" alt="" />
+              <div>
+                <strong>Priya Sharma</strong><span>Member for 3 years</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              "I've tried many gyms but Engage is different. The atmosphere
+              pushes you to be your best self every single day."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/60?img=8" alt="" />
+              <div>
+                <strong>Tom Bradley</strong><span>Member for 18 months</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              "The HIIT classes are insane — in the best way. I've never been in
+              better shape in my life at 42 years old."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/60?img=10" alt="" />
+              <div>
+                <strong>Angela Russo</strong><span>Member for 8 months</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Nutrition plan + Elite membership = transformation of a lifetime.
+              The whole team cheers you on."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/60?img=12" alt="" />
+              <div>
+                <strong>Darius King</strong><span>Member for 14 months</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn" id="sliderPrev">&#8592;</button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-btn" id="sliderNext">&#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="bmi" class="section-bmi">
+      <div class="bmi-inner reveal-up">
+        <div class="bmi-text">
+          <span class="section-tag">FREE TOOL</span>
+          <h2>BMI Calculator</h2>
+          <p>
+            Find out where you stand and set your fitness goals accordingly. Our
+            BMI calculator gives you an instant health snapshot.
+          </p>
+          <div class="bmi-legend">
+            <div class="bmi-range">
+              <span style="background: #4fc3f7"></span>Underweight &lt; 18.5
+            </div>
+            <div class="bmi-range">
+              <span style="background: #66bb6a"></span>Normal 18.5 – 24.9
+            </div>
+            <div class="bmi-range">
+              <span style="background: #ffa726"></span>Overweight 25 – 29.9
+            </div>
+            <div class="bmi-range">
+              <span style="background: #ef5350"></span>Obese ≥ 30
+            </div>
+          </div>
+        </div>
+        <div class="bmi-form-wrap">
+          <div class="bmi-toggle">
+            <button
+              class="toggle-btn active"
+              id="btnMetric"
+              onclick="switchUnit('metric')"
+            >
+              METRIC
+            </button>
+            <button
+              class="toggle-btn"
+              id="btnImperial"
+              onclick="switchUnit('imperial')"
+            >
+              IMPERIAL
+            </button>
+          </div>
+          <div class="bmi-form">
+            <div class="bmi-field" id="metricFields">
+              <div class="bmi-input-group">
+                <label>Height (cm)</label>
+                <input
+                  type="number"
+                  id="heightCm"
+                  placeholder="e.g. 175"
+                  min="50"
+                  max="250"
+                />
+              </div>
+              <div class="bmi-input-group">
+                <label>Weight (kg)</label>
+                <input
+                  type="number"
+                  id="weightKg"
+                  placeholder="e.g. 70"
+                  min="20"
+                  max="300"
+                />
+              </div>
+            </div>
+            <div class="bmi-field hidden" id="imperialFields">
+              <div class="bmi-input-group">
+                <label>Height (ft)</label>
+                <input
+                  type="number"
+                  id="heightFt"
+                  placeholder="e.g. 5"
+                  min="1"
+                  max="8"
+                />
+              </div>
+              <div class="bmi-input-group">
+                <label>Height (in)</label>
+                <input
+                  type="number"
+                  id="heightIn"
+                  placeholder="e.g. 9"
+                  min="0"
+                  max="11"
+                />
+              </div>
+              <div class="bmi-input-group">
+                <label>Weight (lbs)</label>
+                <input
+                  type="number"
+                  id="weightLbs"
+                  placeholder="e.g. 154"
+                  min="44"
+                  max="660"
+                />
+              </div>
+            </div>
+            <button class="btn-primary bmi-calc-btn" onclick="calculateBMI()">
+              CALCULATE BMI
+            </button>
+          </div>
+          <div class="bmi-result hidden" id="bmiResult">
+            <div class="bmi-score" id="bmiScore">--</div>
+            <div class="bmi-category" id="bmiCategory">--</div>
+            <div class="bmi-bar-wrap">
+              <div class="bmi-bar-track">
+                <div class="bmi-bar-fill" id="bmiBarFill"></div>
+              </div>
+            </div>
+            <p id="bmiAdvice"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="section-blog">
+      <div class="section-header reveal-up">
+        <span class="section-tag">BLOG</span>
+        <h2>Fitness Tips & News</h2>
+        <p>Expert articles to fuel your fitness journey.</p>
+      </div>
+      <div class="blog-grid">
+        <div class="blog-card reveal-up" style="--d: 0s">
+          <div
+            class="blog-img"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80&quot;);
+            "
+          >
+            <span class="blog-tag">NUTRITION</span>
+          </div>
+          <div class="blog-content">
+            <span class="blog-date">May 10, 2025</span>
+            <h3>The 5 Best Pre-Workout Foods for Maximum Performance</h3>
+            <p>
+              What you eat before training determines how hard you can push.
+              Here's exactly what to eat and when.
+            </p>
+            <a href="blog.html" class="blog-read">READ MORE →</a>
+          </div>
+        </div>
+        <div class="blog-card reveal-up" style="--d: 0.15s">
+          <div
+            class="blog-img"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&q=80&quot;);
+            "
+          >
+            <span class="blog-tag">TRAINING</span>
+          </div>
+          <div class="blog-content">
+            <span class="blog-date">April 28, 2025</span>
+            <h3>Progressive Overload: The #1 Secret to Building Muscle</h3>
+            <p>
+              If your workouts feel the same every week, you're leaving gains on
+              the table. Here's how to fix that.
+            </p>
+            <a href="blog.html" class="blog-read">READ MORE →</a>
+          </div>
+        </div>
+        <div class="blog-card reveal-up" style="--d: 0.3s">
+          <div
+            class="blog-img"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80&quot;);
+            "
+          >
+            <span class="blog-tag">RECOVERY</span>
+          </div>
+          <div class="blog-content">
+            <span class="blog-date">April 15, 2025</span>
+            <h3>Sleep, Stress & Gains: How Recovery Affects Your Results</h3>
+            <p>
+              Training hard is only half the equation. Discover why recovery is
+              where the real magic happens.
+            </p>
+            <a href="blog.html" class="blog-read">READ MORE →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section-faq">
+      <div class="faq-inner">
+        <div
+          class="section-header reveal-up"
+          style="text-align: left; margin-bottom: 0"
+        >
+          <span class="section-tag">FAQ</span>
+          <h2>Frequently Asked<br />Questions</h2>
+        </div>
+        <div class="faq-list reveal-up">
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>Do I need experience to join?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Absolutely not. We welcome everyone — from complete beginners to
+              seasoned athletes. Our trainers tailor programs to your current
+              fitness level and goals.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>Can I try before I commit?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes! We offer a free 3-day trial pass so you can experience the
+              gym, meet the trainers, and attend classes before choosing a
+              membership plan.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>What are your opening hours?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              We're open Monday–Friday 5AM–12AM, Saturday 6AM–10PM, and Sunday
+              7AM–9PM. Elite and Champion members also have 24/7 keycard access.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>Is there parking available?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes, we have a large free parking lot directly in front of the gym
+              with over 100 spaces available at all times.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>Do you offer personal training?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes. All our trainers are certified and available for 1-on-1
+              sessions. Personal training is included in the Champion plan or
+              available as an add-on for other plans.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>Can I cancel my membership anytime?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes. All memberships are month-to-month with no long-term
+              contracts. You can cancel with 30 days notice from within your
+              account or at the front desk.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-contact">
+      <div class="section-header reveal-up">
+        <span class="section-tag">GET IN TOUCH</span>
+        <h2>Contact Us</h2>
+        <p>Have questions? We'd love to hear from you.</p>
+      </div>
+      <div class="contact-inner">
+        <div class="contact-info reveal-left">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>3820 S Las Vegas Blvd, Las Vegas, NV 89109</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>+1 (702) 555-0199</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>hello@engagegym.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <h4>Hours</h4>
+              <p>Mon–Fri: 5AM–12AM<br />Sat: 6AM–10PM<br />Sun: 7AM–9PM</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <select>
+              <option>Membership Inquiry</option>
+              <option>Personal Training</option>
+              <option>Class Schedule</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea
+              rows="5"
+              placeholder="How can we help you?"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%">
+            SEND MESSAGE
+          </button>
+          <div class="form-success hidden" id="formSuccess">
+            ✓ Message sent! We'll get back to you within 24 hours.
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="gym-light.png" alt="logo" />
+          <p>
+            The premier fitness destination in Las Vegas. Building champions
+            since 1994.
+          </p>
+          <div class="footer-socials">
+            <a href="#">IG</a><a href="#">FB</a><a href="#">TW</a
+            ><a href="#">YT</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="programs.html">Powerlifting</a></li>
+            <li><a href="programs.html">HIIT & Cardio</a></li>
+            <li><a href="programs.html">Yoga & Mobility</a></li>
+            <li><a href="programs.html">Combat Fitness</a></li>
+            <li><a href="programs.html">1-on-1 Coaching</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Get weekly fitness tips, class schedules and exclusive offers.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address" />
+            <button class="btn-primary" onclick="subscribeNewsletter()">
+              JOIN
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Engage Gym. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="back-to-top"
+      id="backToTop"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      ↑
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
